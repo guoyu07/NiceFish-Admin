@@ -10,6 +10,8 @@ import { FooterInfoComponent } from '../footer-info/footer-info.component';
 import { PostTableComponent } from '../post-table/post-table.component';
 import { CommentTableComponent } from '../comment-table/comment-table.component';
 import { UserTableComponent } from '../user/user-table/user-table.component';
+import { FormControlComponent } from '../user/user-profile/dynamic-form/form-control.component';
+import { UserProfileComponent } from '../user/user-profile/user-profile.component';
 import { RoleTableComponent } from '../role/role-table/role-table.component';
 import { PermissionTableComponent } from '../permission/permission-table/permission-table.component';
 import { SysMonitorComponent } from '../sys/sys-monitor/sys-monitor.component';
@@ -36,6 +38,8 @@ import { workspaceRoutes } from './workspace.routes';
         PostTableComponent,
         CommentTableComponent,
         UserTableComponent,
+        FormControlComponent,
+        UserProfileComponent,
         RoleTableComponent,
         PermissionTableComponent,
         SysMonitorComponent

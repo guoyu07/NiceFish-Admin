@@ -10,14 +10,18 @@ import { flyIn } from '../animations/fly-in';
   ]
 })
 export class CommentTableComponent implements OnInit {
-  public maxSize: number = 5;
-  public itemsPerPage: number = 5;
-  public totalItems: number = 15;
-  public currentPage: number = 1;
-  public worker: Worker;
-  constructor() { }
+  	public maxSize: number = 5;
+  	public itemsPerPage: number = 5;
+  	public totalItems: number = 15;
+  	public currentPage: number = 1;
 
-  ngOnInit() {
-  }
+  	constructor() { }
 
+  	ngOnInit() {
+  		
+  	}
+
+    public pageChanged(event:any):void {
+    	console.log("加载下一页数据...");
+    }
 }

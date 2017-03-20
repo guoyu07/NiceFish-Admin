@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { flyIn } from '../../animations/fly-in';
 
 @Component({
@@ -15,10 +16,37 @@ export class UserTableComponent implements OnInit {
     public totalItems:number = 15;
     public currentPage:number = 1;
 
-  constructor() { }
+    constructor(public router: Router,
+        public activeRoute: ActivatedRoute) {
+    }
 
-  ngOnInit() {
-  	
-  }
+    ngOnInit() {
+      this.activeRoute.params.subscribe(
+        params =>this.getUsersByPage(params["page"])
+      );
+    }
 
+    public getUsersByPage(page:Number):void{
+      console.log("页码>"+page);
+    }
+
+    public pageChanged(event):void{
+      this.router.navigateByUrl("/workspace/usertable/page/"+event.page);
+    }
+
+    public newUser():void{
+      this.router.navigateByUrl("/workspace/usertable/newuser");
+    }
+
+    public blockUser(userId:Number):void{
+      console.log(userId);
+    }
+
+    public unBlockUser(userId:Number):void{
+      console.log(userId);
+    }
+
+    public resetPwd(userId:Number):void{
+      console.log(userId);
+    }
 }
