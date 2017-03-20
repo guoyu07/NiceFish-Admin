@@ -6,7 +6,8 @@ import { LeftNavComponent } from '../left-nav/left-nav.component';
 import { TopMenuComponent } from '../top-menu/top-menu.component';
 import { FooterInfoComponent } from '../footer-info/footer-info.component';
 import { PostTableComponent } from '../post-table/post-table.component';
-import { UserTableComponent } from '../user-table/user-table.component';
+import { CommentTableComponent } from '../comment-table/comment-table.component';
+import { UserTableComponent } from '../user/user-table/user-table.component';
 import { ModalModule } from 'ng2-bootstrap';
 import { PaginationModule } from 'ng2-bootstrap';
 
@@ -28,6 +29,7 @@ import { workspaceRoutes } from './workspace.routes';
         TopMenuComponent,
         FooterInfoComponent,
         PostTableComponent,
+        CommentTableComponent,
         UserTableComponent
     ],
     providers: [
