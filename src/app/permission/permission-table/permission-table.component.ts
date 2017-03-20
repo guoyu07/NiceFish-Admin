@@ -2,23 +2,21 @@ import { Component, OnInit } from '@angular/core';
 import { flyIn } from '../../animations/fly-in';
 
 @Component({
-  selector: 'user-table',
-  templateUrl: './user-table.component.html',
-  styleUrls: ['./user-table.component.scss'],
+  selector: 'permission-table',
+  templateUrl: './permission-table.component.html',
+  styleUrls: ['./permission-table.component.scss'],
   animations: [
     flyIn
   ]
 })
-export class UserTableComponent implements OnInit {
+export class PermissionTableComponent implements OnInit {
 	  public maxSize:number = 5;
     public itemsPerPage:number=5;
     public totalItems:number = 15;
     public currentPage:number = 1;
-
   constructor() { }
 
   ngOnInit() {
-  	
   }
 
 }
