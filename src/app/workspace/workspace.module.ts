@@ -17,6 +17,8 @@ import { UserProfileComponent } from '../user/user-profile/user-profile.componen
 import { RoleTableComponent } from '../role/role-table/role-table.component';
 import { PermissionTableComponent } from '../permission/permission-table/permission-table.component';
 import { SysMonitorComponent } from '../sys/sys-monitor/sys-monitor.component';
+import { GaodeMapComponent } from '../map/gaode-map/gaode-map.component';
+import { AmapComponent } from '../map/gaode-map/amap/amap.component';
 import { WorkspaceComponent } from './workspace.component';
 
 import { EChartOptionDirective1 } from '../sys/sys-monitor/echart-option.directive';
@@ -46,7 +48,9 @@ import { workspaceRoutes } from './workspace.routes';
         UserProfileComponent,
         RoleTableComponent,
         PermissionTableComponent,
-        SysMonitorComponent
+        SysMonitorComponent,
+        GaodeMapComponent,
+        AmapComponent
     ],
     providers: [
 	    PostTableService
