@@ -1,5 +1,6 @@
 import { RouterModule } from '@angular/router';
-import { PostTableComponent } from '../post-table/post-table.component';
+import { PostTableComponent } from '../post/post-table/post-table.component';
+import { WritePostComponent } from '../post/write-post/write-post.component';
 import { CommentTableComponent } from '../comment-table/comment-table.component';
 import { UserTableComponent } from '../user/user-table/user-table.component';
 import { UserProfileComponent } from '../user/user-profile/user-profile.component';
@@ -15,6 +16,7 @@ export const workspaceRoutes=[
         children: [
 	    	{ path: '',redirectTo:'posttable/page/1',pathMatch:'full'},
 	    	{ path: 'posttable/page/:page', component: PostTableComponent },
+	    	{ path: 'writepost', component: WritePostComponent },
 	    	{ path: 'commenttable/page/:page', component: CommentTableComponent },
 	    	{ path: 'usertable/page/:page', component: UserTableComponent },
 	    	{ path: 'usertable/edituser/:id', component: UserProfileComponent },

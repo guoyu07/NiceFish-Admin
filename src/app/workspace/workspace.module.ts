@@ -7,7 +7,8 @@ import { PaginationModule } from 'ng2-bootstrap';
 import { LeftNavComponent } from '../left-nav/left-nav.component';
 import { TopMenuComponent } from '../top-menu/top-menu.component';
 import { FooterInfoComponent } from '../footer-info/footer-info.component';
-import { PostTableComponent } from '../post-table/post-table.component';
+import { PostTableComponent } from '../post/post-table/post-table.component';
+import { WritePostComponent } from '../post/write-post/write-post.component';
 import { CommentTableComponent } from '../comment-table/comment-table.component';
 import { UserTableComponent } from '../user/user-table/user-table.component';
 import { FormControlComponent } from '../user/user-profile/dynamic-form/form-control.component';
@@ -18,7 +19,7 @@ import { SysMonitorComponent } from '../sys/sys-monitor/sys-monitor.component';
 import { WorkspaceComponent } from './workspace.component';
 
 import { EChartOptionDirective1 } from '../sys/sys-monitor/echart-option.directive';
-import { PostTableService } from '../post-table/services/post-table.service';
+import { PostTableService } from '../post/post-table/services/post-table.service';
 import { workspaceRoutes } from './workspace.routes';
 
 @NgModule({
@@ -36,6 +37,7 @@ import { workspaceRoutes } from './workspace.routes';
         TopMenuComponent,
         FooterInfoComponent,
         PostTableComponent,
+        WritePostComponent,
         CommentTableComponent,
         UserTableComponent,
         FormControlComponent,

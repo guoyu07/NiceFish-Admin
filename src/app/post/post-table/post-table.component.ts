@@ -1,6 +1,6 @@
 import { Component, OnInit, Input} from '@angular/core';
-import { flyIn } from '../animations/fly-in';
 import { ActivatedRoute, Router, UrlTree, PRIMARY_OUTLET, UrlSegmentGroup, UrlSegment } from '@angular/router';
+import { flyIn } from '../../animations/fly-in';
 import { PostTableService } from './services/post-table.service';
 
 @Component({
@@ -44,14 +44,14 @@ export class PostTableComponent implements OnInit {
     }
 
     public pageChanged(event:any):void {
-      let urlTree:UrlTree=this.router.parseUrl(this.router.url);
-      const g: UrlSegmentGroup = urlTree.root.children[PRIMARY_OUTLET];
-      const s: UrlSegment[] = g.segments;
-      this.router.navigateByUrl(s[0]+"/posttable/page/"+event.page);
+      // let urlTree:UrlTree=this.router.parseUrl(this.router.url);
+      // const g: UrlSegmentGroup = urlTree.root.children[PRIMARY_OUTLET];
+      // const s: UrlSegment[] = g.segments;
+      // this.router.navigateByUrl(s[0]+"/posttable/page/"+event.page);
     }
 
     public goToWrite():void{
-      this.router.navigateByUrl("user/write");
+      this.router.navigateByUrl("/workspace/writepost");
     }
 
     public editPost(event):void{
