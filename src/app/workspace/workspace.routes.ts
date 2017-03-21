@@ -2,6 +2,7 @@ import { RouterModule } from '@angular/router';
 import { PostTableComponent } from '../post/post-table/post-table.component';
 import { WritePostComponent } from '../post/write-post/write-post.component';
 import { CommentTableComponent } from '../comment-table/comment-table.component';
+import { OrgMngComponent } from '../org/org-mng/org-mng.component';
 import { UserTableComponent } from '../user/user-table/user-table.component';
 import { UserProfileComponent } from '../user/user-profile/user-profile.component';
 import { RoleTableComponent } from '../role/role-table/role-table.component';
@@ -18,6 +19,7 @@ export const workspaceRoutes=[
 	    	{ path: 'posttable/page/:page', component: PostTableComponent },
 	    	{ path: 'writepost', component: WritePostComponent },
 	    	{ path: 'commenttable/page/:page', component: CommentTableComponent },
+	    	{ path: 'orgmng', component: OrgMngComponent },
 	    	{ path: 'usertable/page/:page', component: UserTableComponent },
 	    	{ path: 'usertable/edituser/:id', component: UserProfileComponent },
 	    	{ path: 'usertable/newuser', component: UserProfileComponent },

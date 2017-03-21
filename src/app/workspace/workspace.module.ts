@@ -10,6 +10,7 @@ import { FooterInfoComponent } from '../footer-info/footer-info.component';
 import { PostTableComponent } from '../post/post-table/post-table.component';
 import { WritePostComponent } from '../post/write-post/write-post.component';
 import { CommentTableComponent } from '../comment-table/comment-table.component';
+import { OrgMngComponent } from '../org/org-mng/org-mng.component';
 import { UserTableComponent } from '../user/user-table/user-table.component';
 import { FormControlComponent } from '../user/user-profile/dynamic-form/form-control.component';
 import { UserProfileComponent } from '../user/user-profile/user-profile.component';
@@ -39,6 +40,7 @@ import { workspaceRoutes } from './workspace.routes';
         PostTableComponent,
         WritePostComponent,
         CommentTableComponent,
+        OrgMngComponent,
         UserTableComponent,
         FormControlComponent,
         UserProfileComponent,
