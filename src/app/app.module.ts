@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { HttpModule,JsonpModule ,Http} from '@angular/http';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -23,6 +24,7 @@ export function createTranslateLoader(http: Http) {
   imports: [
     SharedModule,
     BrowserModule,
+    BrowserAnimationsModule,
     RouterModule,
     ReactiveFormsModule,
     HttpModule,
