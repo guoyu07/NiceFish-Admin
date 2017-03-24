@@ -3,7 +3,6 @@ import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { ModalModule } from 'ng2-bootstrap';
 import { PaginationModule } from 'ng2-bootstrap';
-import { DataTablesModule } from 'angular-datatables';
 
 import { LeftNavComponent } from '../left-nav/left-nav.component';
 import { TopMenuComponent } from '../top-menu/top-menu.component';
@@ -29,7 +28,6 @@ import { workspaceRoutes } from './workspace.routes';
 @NgModule({
     imports: [
         SharedModule,
-        DataTablesModule,
         ModalModule.forRoot(),
         PaginationModule.forRoot(),
         RouterModule.forChild(workspaceRoutes)
