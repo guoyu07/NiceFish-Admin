@@ -18,5 +18,13 @@ export class RoleTableComponent implements OnInit {
 
   ngOnInit() {
   }
+blockUser(id: number){
 
+  }
+  unBlockUser(id: number){
+
+  }
+  resetPwd(id: number){
+
+  }
 }

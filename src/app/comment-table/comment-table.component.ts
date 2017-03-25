@@ -10,6 +10,7 @@ import { flyIn } from '../animations/fly-in';
   ]
 })
 export class CommentTableComponent implements OnInit {
+    public numPages: number = 3;
   	public maxSize: number = 5;
   	public itemsPerPage: number = 5;
   	public totalItems: number = 15;
@@ -23,5 +24,8 @@ export class CommentTableComponent implements OnInit {
 
     public pageChanged(event:any):void {
     	console.log("加载下一页数据...");
+    }
+    delComment(id: number){
+
     }
 }

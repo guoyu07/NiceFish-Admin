@@ -11,6 +11,7 @@ import { flyIn } from '../../animations/fly-in';
   ]
 })
 export class UserTableComponent implements OnInit {
+    public numPages: number = 3;
 	  public maxSize:number = 5;
     public itemsPerPage:number=5;
     public totalItems:number = 15;

@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SysMonitorComponent implements OnInit {
 
 
-  private pieChart = {
+  public pieChart = {
     theme: '',
     event: [
       {

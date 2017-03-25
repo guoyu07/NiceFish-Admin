@@ -15,6 +15,7 @@ export class PostTableComponent implements OnInit {
     @Input() dataURL:string="src/mock-data/postlist-mock.json";
 
 	public postList:Array<any>;
+  public numPages: number = 3;
     public maxSize:number = 5;
     public itemsPerPage:number=5;
     public totalItems:number = 15;
