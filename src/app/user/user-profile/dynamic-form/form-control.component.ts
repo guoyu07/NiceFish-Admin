@@ -17,7 +17,7 @@ export class FormControlComponent implements OnInit {
     constructor() { }
 
     ngOnInit() { }
-    showDatepicker(){
-      console.log(this.isHidden = !this.isHidden);
+    selectionDone(){
+        this.isHidden = !this.isHidden
     }
 }

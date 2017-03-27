@@ -15,7 +15,7 @@
                 
             </div>
             <div *ngSwitchCase="'datepicker'" class="datepicker-dropdown" [hidden]="isHidden">
-                <datepicker [formControlName]="field.key" [(ngModel)]="field.value"></datepicker>
+                <datepicker (selectionDone)="selectionDone()" [formControlName]="field.key" [(ngModel)]="field.value"></datepicker>
             </div>
         </div>
     </div>
