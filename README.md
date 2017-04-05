@@ -1,8 +1,8 @@
 #NiceFish-Admin
 
- 这是NiceFish的后台管理界面，纯前端，没有任何后端代码。整体基于Angular2和Bootstrap3.3.7，用来示范Angular2在后台管理系统里面的典型使用方法。 
+这是NiceFish的后台管理界面，纯前端，没有任何后端代码。整体基于Angular2和Bootstrap3.3.7，用来示范Angular2在后台管理系统里面的典型使用方法。 
 
- - 【NiceFish（美人鱼）】：这是一个微型Blog系统，前端基于Angular 4.0.0 + ng-Bootstrap。
+- 【NiceFish（美人鱼）】：这是一个微型Blog系统，前端基于Angular 4.0.0 + ng-Bootstrap。http://git.oschina.net/mumu-osc/NiceFish-Admin
 
 - 【NiceFish-Admin是系统管理界面，基于Angular 4.0.0】：http://git.oschina.net/mumu-osc/NiceFish-Admin
 
