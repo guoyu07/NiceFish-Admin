@@ -1,5 +1,8 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
+import { Component, ComponentRef, ElementRef, OnInit } from '@angular/core';
 import { flyIn } from '../../animations/fly-in';
+import { ButtonInfo, PopupEffect, PopupInfo, PopupOptions, PopupPositionType,PopupService } from "@rdkmaster/jigsaw";
+import {RdkErrorAlert, RdkInfoAlert, RdkWarningAlert} from "@rdkmaster/jigsaw";
+
 import 'ztree';
 
 @Component({
@@ -11,6 +14,8 @@ import 'ztree';
   ]
 })
 export class OrgMngComponent implements OnInit {
+	private answer:string = '';
+
 	private setting:any = {
 	    data: {
 	      	simpleData: {
@@ -51,11 +56,37 @@ export class OrgMngComponent implements OnInit {
 	    { id: 3, pId: 0, name: "父节点3 - 没有子节点", isParent: true }
 	];
 
-	constructor(public el: ElementRef) {
+	constructor(public el: ElementRef,private popupService: PopupService) {
 
 	}
 
 	ngOnInit() {
 	    $.fn.zTree.init($("#ztree"),this.setting,this.zNodes);
 	}
+
+	public commonWarningAlert():void{
+		this.answer = 'waiting for an answer';
+        const popupInfo = this.popupService.popup(RdkWarningAlert, this.getModalOptions(), {
+            message: 'this is a great warning alert!'
+        });
+        if(popupInfo.popupRef instanceof ComponentRef){
+            popupInfo.popupRef.instance.answer.subscribe(answer => {
+                this.disposeAnswer(answer, popupInfo)
+            })
+        }
+	}
+
+	disposeAnswer(answer: ButtonInfo, popupInfo: PopupInfo){
+        this.answer = answer ? 'great! your answer is: ' + answer.label : 'you closed the alert with the close button';
+        popupInfo.dispose();
+    }
+
+	private getModalOptions(): PopupOptions {
+        return {
+            modal: true, //是否模态
+            showEffect: PopupEffect.bubbleIn,
+            hideEffect: PopupEffect.bubbleOut
+        };
+    }
+
 }

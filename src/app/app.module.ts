@@ -2,18 +2,20 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
-import { HttpModule, JsonpModule, Http} from '@angular/http';
+import { HttpModule, JsonpModule, Http } from '@angular/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ToastModule } from 'ng2-toastr/ng2-toastr';
+import { RdkJigsawModule } from '@rdkmaster/jigsaw';
 
 import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { appRoutes } from './app.routes';
 
-export function createTranslateLoader(http: Http) {
-    return new TranslateStaticLoader(http, './assets/i18n', '.json');
+export function HttpLoaderFactory(http: Http) {
+  return new TranslateHttpLoader(http, '../assets/i18n/', '.json');
 }
 
 @NgModule({
@@ -22,6 +24,7 @@ export function createTranslateLoader(http: Http) {
     LoginComponent
   ],
   imports: [
+    RdkJigsawModule,
     SharedModule,
     BrowserModule,
     BrowserAnimationsModule,
@@ -29,16 +32,21 @@ export function createTranslateLoader(http: Http) {
     ReactiveFormsModule,
     HttpModule,
     JsonpModule,
+    BrowserModule,
     TranslateModule.forRoot({
-      provide: TranslateLoader,
-      useFactory: (createTranslateLoader),
-      deps: [Http]
-    }),
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [Http]
+      }, isolate: true
+    }
+    ),
     ToastModule.forRoot(),
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [
-  ],
-  bootstrap: [AppComponent]
+  providers: [],
+  bootstrap: [AppComponent],
+  entryComponents: [
+  ]
 })
 export class AppModule { }
