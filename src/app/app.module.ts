@@ -7,7 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ToastModule } from 'ng2-toastr/ng2-toastr';
-import { RdkJigsawModule } from '@rdkmaster/jigsaw';
+import { JigsawModule } from '@rdkmaster/jigsaw';
 
 import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
@@ -24,7 +24,7 @@ export function HttpLoaderFactory(http: Http) {
     LoginComponent
   ],
   imports: [
-    RdkJigsawModule,
+    JigsawModule,
     SharedModule,
     BrowserModule,
     BrowserAnimationsModule,

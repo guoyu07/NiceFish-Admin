@@ -1,7 +1,7 @@
 import { Component, ComponentRef, ElementRef, OnInit } from '@angular/core';
 import { flyIn } from '../../animations/fly-in';
 import { ButtonInfo, PopupEffect, PopupInfo, PopupOptions, PopupPositionType,PopupService } from "@rdkmaster/jigsaw";
-import {RdkErrorAlert, RdkInfoAlert, RdkWarningAlert} from "@rdkmaster/jigsaw";
+import { JigsawErrorAlert, JigsawInfoAlert, JigsawWarningAlert } from "@rdkmaster/jigsaw";
 
 import 'ztree';
 
@@ -66,7 +66,7 @@ export class OrgMngComponent implements OnInit {
 
 	public commonWarningAlert():void{
 		this.answer = 'waiting for an answer';
-        const popupInfo = this.popupService.popup(RdkWarningAlert, this.getModalOptions(), {
+        const popupInfo = this.popupService.popup(JigsawWarningAlert, this.getModalOptions(), {
             message: 'this is a great warning alert!'
         });
         if(popupInfo.popupRef instanceof ComponentRef){
