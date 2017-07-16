@@ -3,8 +3,6 @@ import { ActivatedRoute, Router, ActivatedRouteSnapshot, RouterState, RouterStat
 import { TranslateService } from 'ng2-translate';
 import 'rxjs/add/operator/merge';
 
-import { ToastsManager } from 'ng2-toastr/ng2-toastr';
-
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
@@ -19,11 +17,9 @@ export class AppComponent {
 		public renderer: Renderer,
 		public router: Router,
 		public activatedRoute: ActivatedRoute,
-		public translate: TranslateService,
-		public toastr: ToastsManager,
-		public vcr: ViewContainerRef
+		public translate: TranslateService
 	) {
-		this.toastr.setRootViewContainerRef(vcr);
+		
 	}
 
 	ngOnInit() {

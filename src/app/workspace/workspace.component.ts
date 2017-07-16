@@ -16,7 +16,5 @@ export class WorkspaceComponent implements OnInit {
   	}
 
   	ngOnInit() {
-  		//用require动态加载的外部JS
-  		require("custom");
   	}
 }

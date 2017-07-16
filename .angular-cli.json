@@ -18,8 +18,7 @@
         "tsconfig": "tsconfig.json",
         "prefix": "",
         "styles": [
-            "styles.scss",
-            "../node_modules/datatables.net-dt/css/jquery.dataTables.css"
+            "styles.scss"
         ],
         "scripts": [
             "../node_modules/tinymce/tinymce.js",
@@ -55,12 +54,7 @@
             "../node_modules/tinymce/plugins/textcolor/plugin.js",
             "../node_modules/tinymce/plugins/colorpicker/plugin.js",
             "../node_modules/tinymce/plugins/textpattern/plugin.js",
-            "../node_modules/tinymce/plugins/imagetools/plugin.js",
-
-            "../node_modules/jquery/dist/jquery.js",
-            "../node_modules/jquery-ui-dist/jquery-ui.js",
-            "../node_modules/bootstrap/dist/js/bootstrap.js",
-            "../node_modules/datatables.net/js/jquery.dataTables.js"
+            "../node_modules/tinymce/plugins/imagetools/plugin.js"
         ],
         "environmentSource": "environments/environment.ts",
         "environments": {

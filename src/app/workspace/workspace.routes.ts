@@ -5,7 +5,7 @@ export const workspaceRoutes = [
 		path: '',
 		component: WorkspaceComponent,
 		children: [
-			{ path: '', redirectTo: 'post', pathMatch: 'full' },
+			{ path: '', redirectTo: 'org', pathMatch: 'full' },
 			{ path: 'post', loadChildren: '../post/post.module#PostModule' },
 			{ path: 'comment', loadChildren: '../comment/comment.module#CommentModule' },
 			{ path: 'org', loadChildren: '../org/org.module#OrgModule' },

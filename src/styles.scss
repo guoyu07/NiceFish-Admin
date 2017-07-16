@@ -4358,7 +4358,8 @@ ul.notifications {
 }
 /** /Dropzone.js **/
 
-@import  "../node_modules/jquery-ui-dist/jquery-ui.css";
-@import  "../node_modules/ng2-toastr/bundles/ng2-toastr.min.css";
-@import  "../node_modules/ztree/css/metroStyle/metroStyle.css";
-@import  "../node_modules/datatables.net-dt/css/jquery.dataTables.css"
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+
+@import "/assets/css/primeng-themes-my/primeng.min.css";
+@import "/assets/css/primeng-themes-my/themes/bootstrap-my/theme.css";
