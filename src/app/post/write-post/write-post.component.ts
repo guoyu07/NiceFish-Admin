@@ -65,7 +65,7 @@ export class WritePostComponent implements OnInit,AfterViewInit,OnDestroy {
          */
     	  tinymce.init({
       		  selector: '#post_editor',
-            skin_url: '/assets/skins/lightgray',
+            skin_url: '/assets/css/tinymce-skins/lightgray',
             //menubar:false,
       		  plugins: [
               'advlist autolink lists link image charmap print preview hr anchor pagebreak',
