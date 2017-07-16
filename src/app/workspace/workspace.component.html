@@ -1,12 +1,8 @@
-<div class="container body">
-    <div class="main_container">
-        <div class="col-md-3 left_col">
-          <left-nav></left-nav>
-        </div>
-        <div class="top_nav">
-          <top-menu></top-menu>
-        </div>
-        <div class="right_col" role="main">
+<div class="layout-wrapper layout-menu-static">
+    <top-menu></top-menu>
+    <div class="layout-main">
+        <left-nav></left-nav>
+        <div class="layout-content">
             <router-outlet></router-outlet>
         </div>
         <footer-info></footer-info>

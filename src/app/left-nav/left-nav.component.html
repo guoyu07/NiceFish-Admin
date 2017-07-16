@@ -1,44 +1,67 @@
-<div class="left_col scroll-view">
-    <div class="navbar nav_title" style="border: 0;">
-        <a href="index.html" class="site_title"><i class="fa fa-cog"></i><span>NiceFish-Admin</span></a>
-    </div>
-    <div class="clearfix"></div>
-    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-        <p-accordion>
-            <p-accordionTab header="权限管理" [selected]="true">
-                <div class="list-group">
-                    <a routerLink="org/orgmng" class="list-group-item">组织架构</a>
-                    <a routerLink="user/usertable/page/1" class="list-group-item">用户列表</a>
-                    <a routerLink="role/roletable/page/1" class="list-group-item">角色列表</a>
-                    <a routerLink="permission/permissiontable/page/1" class="list-group-item">权限列表</a>
+<div class="layout-menu-wrapper">
+    <div class="nano">
+        <div class="nano-content sidebar-scroll-content">
+            <div class="layout-menu-container">
+                <div class="mobile-search">
+                    <i class="fa fa-fw fa-search topbar-search-icon"></i>
+                    <input class="topbar-search" placeholder="Type your search here" type="text">
                 </div>
-            </p-accordionTab>
-            <p-accordionTab header="内容管理">
-                <div class="list-group">
-                    <a routerLink="post/posttable/page/1" class="list-group-item">文章管理</a>
-                    <a routerLink="comment/commenttable/page/1" class="list-group-item">评论管理</a>
-                </div>
-            </p-accordionTab>
-            <p-accordionTab header="系统监控">
-                <div class="list-group">
-                    <a routerLink="sys/sysmonitor" class="list-group-item">系统状态</a>
-                    <a routerLink="map/map" class="list-group-item">高德地图</a>
-                </div>
-            </p-accordionTab>
-        </p-accordion>
-    </div>
-    <div class="sidebar-footer hidden-small">
-        <a data-toggle="tooltip" data-placement="top" title="Settings">
-            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-        </a>
-        <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-        </a>
-        <a data-toggle="tooltip" data-placement="top" title="Lock">
-            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-        </a>
-        <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
-            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-        </a>
+                <ul class="layout-menu" root="true" visible="true">
+                    <li class="active-menuitem">
+                        <a routerlinkactive="active-menuitem-routerlink" href="#/" class="active-menuitem-routerlink"><i class="fa fa-fw fa-home"></i><span>Dashboard</span>
+                        </a>
+                        <div class="layout-menu-tooltip">
+                            <div class="layout-menu-tooltip-arrow"></div>
+                            <div class="layout-menu-tooltip-text">Dashboard</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-bars"></i><span>Menu Modes</span><i class="fa fa-fw fa-angle-down"></i>
+                        </a>
+                        <div class="layout-menu-tooltip">
+                            <div class="layout-menu-tooltip-arrow"></div>
+                            <div class="layout-menu-tooltip-text">Menu Modes</div>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-fw fa-bars"></i><span>Static Menu</span></a>
+                                <div class="layout-menu-tooltip">
+                                    <div class="layout-menu-tooltip-arrow"></div>
+                                    <div class="layout-menu-tooltip-text">Static Menu</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-fw fa-bars"></i><span>Overlay Menu</span></a>
+                                <div class="layout-menu-tooltip">
+                                    <div class="layout-menu-tooltip-arrow"></div>
+                                    <div class="layout-menu-tooltip-text">Overlay Menu</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-fw fa-bars"></i><span>Slim Menu</span></a>
+                                <div class="layout-menu-tooltip">
+                                    <div class="layout-menu-tooltip-arrow"></div>
+                                    <div class="layout-menu-tooltip-text">Slim Menu</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-sun-o fa-fw"></i><span>Light Menu</span></a>
+                                <div class="layout-menu-tooltip">
+                                    <div class="layout-menu-tooltip-arrow"></div>
+                                    <div class="layout-menu-tooltip-text">Light Menu</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-moon-o fa-fw"></i><span>Dark Menu</span></a>
+                                <div class="layout-menu-tooltip">
+                                    <div class="layout-menu-tooltip-arrow"></div>
+                                    <div class="layout-menu-tooltip-text">Dark Menu</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
