@@ -35,6 +35,7 @@ export class AppSideMenuComponent implements OnInit {
             id: "3",
             name: "系统监控",
             isOpen: false,
+            icon:'fa-wrench',
             children: [
                 { name: "系统状态",icon:'fa-bars',route:'sys/sysmonitor' },
                 { name: "高德地图",icon:'fa-bars',route:'map/map' }
