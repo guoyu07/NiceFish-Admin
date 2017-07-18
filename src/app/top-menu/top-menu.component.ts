@@ -8,7 +8,8 @@ import { EventBusService } from '../common/services/event-bus.service';
 })
 export class TopMenuComponent implements OnInit {
   private toggleBtnStatus:boolean=false;
-
+  public showTopMenu:boolean=false;
+  
   constructor(private elementRef:ElementRef, private eventBusService:EventBusService) { }
 
   ngOnInit() {
