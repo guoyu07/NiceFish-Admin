@@ -15,10 +15,10 @@ export class AppSideMenuComponent implements OnInit {
             isOpen: false,
             icon:'fa-home',
             children: [
-                { name: "组织架构",icon:'fa-bars',route:'org/orgmng'},
-                { name: "用户管理",icon:'fa-bars',route:'user/usertable/page/1' },
-                { name: "角色管理",icon:'fa-bars',route:'role/roletable/page/1' },
-                { name: "权限管理",icon:'fa-bars',route:'permission/permissiontable/page/1' }
+                { name: "组织架构",icon:'fa-male',route:'org/orgmng'},
+                { name: "用户管理",icon:'fa-bug',route:'user/usertable/page/1' },
+                { name: "角色管理",icon:'fa-bus',route:'role/roletable/page/1' },
+                { name: "权限管理",icon:'fa-send',route:'permission/permissiontable/page/1' }
             ]
         },
         {
@@ -27,8 +27,8 @@ export class AppSideMenuComponent implements OnInit {
             isOpen: false,
             icon:'fa-magic',
             children: [
-                { name: "文章管理",icon:'fa-bars',route:'post/posttable/page/1' },
-                { name: "评论管理",icon:'fa-bars',route:'comment/commenttable/page/1' }
+                { name: "文章管理",icon:'fa-mobile',route:'post/posttable/page/1' },
+                { name: "评论管理",icon:'fa-minus',route:'comment/commenttable/page/1' }
             ]
         },
         {
@@ -37,8 +37,8 @@ export class AppSideMenuComponent implements OnInit {
             isOpen: false,
             icon:'fa-wrench',
             children: [
-                { name: "系统状态",icon:'fa-bars',route:'sys/sysmonitor' },
-                { name: "高德地图",icon:'fa-bars',route:'map/map' }
+                { name: "系统状态",icon:'fa-line-chart',route:'sys/sysmonitor' },
+                { name: "高德地图",icon:'fa-map-marker',route:'map/map' }
             ]
         }
     ];
